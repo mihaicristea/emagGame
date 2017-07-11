@@ -23,11 +23,14 @@ $beast = array(
     'luck' => rand(25, 40),
 );
 
-$gameplay = new GameplayService();
+try {
+    $gameplay = new GameplayService();
 
-$gameplay->createHeroPlayer($hero);
-$gameplay->createBeastPlayer($beast);
+    $gameplay->createHeroPlayer($hero);
+    $gameplay->createBeastPlayer($beast);
 
-$gameplay->startFight();
+    $gameplay->startFight();
 
-
+} catch (\Exception $e) {
+    echo $e->getMessage();
+}

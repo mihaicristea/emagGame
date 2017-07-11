@@ -33,7 +33,7 @@ class ConfigDI
     // Magic method clone is empty to prevent duplication of connection
     private function __clone()
     {}
-    
+
     public function getConfig()
     {
         return $this->_config;
