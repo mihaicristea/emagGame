@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Game\\": "module/Game/src",
+            "Core\\": "module/Core/src"
+        }
+    }
+}
